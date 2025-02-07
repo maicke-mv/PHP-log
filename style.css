@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+div {
+    background-color: rgb(150, 150, 167);
+    width: 300px;
+    display: block;
+    margin: auto;
+    height: 300px;
+    border-radius: 10%;
+    padding: 15px;
+}
+
+ul {
+    background-color: aqua;
+}
