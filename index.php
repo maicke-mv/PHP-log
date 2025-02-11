@@ -9,7 +9,7 @@
 <body>
     <form action="test.php" method="POST">
         <div id="login">
-            <h1>Login</h1>
+            <h1>Login em PHP</h1>
             <input type="email" name="email" id="email" required><br>
             <input type="password" name="senha" id="senha"><br>
             <input type="submit" name= "submit" value="submit" id="submit">
