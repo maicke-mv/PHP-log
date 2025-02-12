@@ -25,7 +25,7 @@
         }*/
         session_start();
         
-        $_SESSION['id']
+        var_dump(session_id());
     ?>  
 </body>
 </html>
