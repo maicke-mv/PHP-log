@@ -23,7 +23,9 @@
         }else{
             echo "DEU ERRO!";
         }*/
-             
+        session_start();
+        
+        $_SESSION['id']
     ?>  
 </body>
 </html>
