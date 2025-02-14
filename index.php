@@ -40,7 +40,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <form method="POST">
         <div id="login">
+<<<<<<< HEAD
             <h1>Login com PHP e REACT</h1>
+=======
+            <h1>Login em PHP</h1>
+>>>>>>> 074f56fb4376cbfe692cf2dd499ad4b6c24a1d73
             <input type="email" name="email" id="email" required><br>
             <input type="password" name="senha" id="senha"><br>
             <input type="submit" name= "submit" value="submit" id="submit">
@@ -57,6 +61,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }else{
             echo "DEU ERRO!";
         }*/
+<<<<<<< HEAD
         ?>
+=======
+        session_start();
+        
+        var_dump(session_id());
+    ?>  
+>>>>>>> 074f56fb4376cbfe692cf2dd499ad4b6c24a1d73
 </body>
 </html>
