@@ -13,26 +13,37 @@
             padding: 25px;
             border-radius: 10px;
         }
-        button.voltar {
-            display: flex;
-            justify-content: center;
-            text-decoration: none;
+        button {
+            background-color: red ;
+            
 }
+        h1 {
+            text-align: center;
+        }
+        .editar {
+            background-color: #4CAF50;
+            margin-left: 5px;
+        }
     </style>
 </head>
 <body>
-    
+    <h1>Lista de Usuários</h1>
 <div>
     <?php
+        session_start();
+        if(!isset($_SESSION['logado'])) {
+            header("Location: index.php");
+            exit;
+        }
     
         include_once('config.php');
-        if(isset($_POST['submit'])){
+        /*if(isset($_POST['submit'])){
             include_once('config.php');
             $email = $_POST['email'];
             $senha = $_POST['senha'];
     
             $result = mysqli_query($conexao, "INSERT INTO usuarios_sistema(email, senha) VALUES ('$email', '$senha')");
-        }
+        }*/
     
         if(isset($_GET['id'])) {
             $id = $_GET['id'];
@@ -50,9 +61,12 @@
             echo "<li>
                 Email: " . $user_data['email'] . " -
                 Senha: " . $user_data['senha'] . "
+                <a href='editar.php?id=" . $user_data['id'] . "'>
+                    <button class='editar'>Editar</button>
+                </a>
                 <a href='test.php?id=" . $user_data['id'] . "'>
             <button>Deletar</button>
-        </a>
+        </a> 
             </li>";
         }
         echo "</ul>";
