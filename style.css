@@ -10,8 +10,13 @@ div {
     height: 300px;
     border-radius: 10%;
     padding: 15px;
+    box-shadow: 10px 10px 5px #000000;
 }
 
 ul {
     background-color: aqua;
+}
+
+p {
+    text-align: center;
 }
